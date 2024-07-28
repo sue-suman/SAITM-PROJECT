@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form id="form">
+            <div class="form">
+                <div class="details">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+
+                        <div class="input-fields">
+                            <label>Full Name</label>
+                            <input type="text" id="full_name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Date of Birth</label>
+                            <input type="date" id="d_o_b" placeholder="Enter birth date" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Email</label>
+                            <input type="email" id="email_id" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Mobile Number</label>
+                            <input type="number" id="mob_number" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Gender</label>
+                            <input type="text" id="gender" placeholder="Enter your gender" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Occupation</label>
+                            <input type="text" id="occupation" placeholder="Enter your occupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>ID Type</label>
+                            <input type="text" id="id_type" placeholder="Enter ID Type" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>ID Number</label>
+                            <input type="number" id="id_number" placeholder="Enter ID number" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Issued Date</label>
+                            <input type="date" id="issued_date" placeholder="Enter Issued date" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Issued State</label>
+                            <input type="text" id="issued_state" placeholder="Enter Issued date" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Issued Date</label>
+                            <input type="date" id="issued_dte" placeholder="Enter Issued date" required>
+                        </div>
+                        
+                        <div class="input-fields">
+                            <label>Expiry Date</label>
+                            <input type="date" id="issued_exp" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="form-second">
+                <div class="details-address">
+                    <span class="title">Address Details</span>
+                    <div class="fields">
+
+                        <div class="input-fields">
+                            <label>Address Type</label>
+                            <input type="text" id="add_type" placeholder="Enter address type" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality" placeholder="Enter your nationality" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>State</label>
+                            <input type="text" id="state" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>District</label>
+                            <input type="text" id="district" placeholder="Enter your district" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Block Number</label>
+                            <input type="number" id="block_num" placeholder="Enter block number" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Ward Number</label>
+                            <input type="number" id="ward_num" placeholder="Enter ward number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label>Father Name</label>
+                            <input type="text" id="father_name" placeholder="Enter father name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Mother Name</label>
+                            <input type="text" id="mother_name" placeholder="Enter mother name" required>
+                        </div>
+                        <div class="input-fields">
+                            <label>Grandfather</label>
+                            <input type="text" id="grandfather" placeholder="Enter grandfather name" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Spouse Name</label>
+                            <input type="text" id="spouse_name" placeholder="Enter spouse anme" required>
+                        </div>
+
+                        <div class="input-fields">
+                            <label>Father-in-law </label>
+                            <input type="text" id="father_in_law" placeholder="Father-in-law name" required>
+                        </div>
+                        
+                        <div class="input-fields">
+                            <label>Mother-in-law</label>
+                            <input type="text" id="mother_in_law" placeholder="Mother-in-law name" required>
+                        </div>
+                        <button type="submit" value="submit">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        var form=document.getElementById('form')
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            var full_name=document.getElementById("full_name").value
+            console.log(full_name)
+            var d_o_b=document.getElementById("d_o_b").value
+            console.log(d_o_b)
+            var email_id=document.getElementById("email_id").value
+            console.log(email_id)
+            var mob_number=document.getElementById("mob_number").value
+            console.log(mob_number)
+            var gender=document.getElementById("gender").value
+            console.log(gender)
+            var occupation=document.getElementById("occupation").value
+            console.log(occupation)
+            var id_type=document.getElementById("id_type").value
+            console.log(id_type)
+            var id_number=document.getElementById("id_number").value
+            console.log(id_number)
+            var issued_date=document.getElementById("issued_date").value
+            console.log(issued_date)
+            var issued_state=document.getElementById("issued_state").value
+            console.log(issued_state)
+            var issued_dte=document.getElementById("issued_dte").value
+            console.log(issued_dte)
+            var issued_exp=document.getElementById("issued_exp").value
+            console.log(issued_exp)
+            var add_type=document.getElementById("add_type").value
+            console.log(add_type)
+            var nationality=document.getElementById("nationality").value
+            console.log(nationality)
+            var state=document.getElementById("state").value
+            console.log(state)
+            var district=document.getElementById("district").value
+            console.log(district)
+            var block_num=document.getElementById("block_num").value
+            console.log(block_num)
+            var ward_num=document.getElementById("ward_num").value
+            console.log(ward_num)
+            var father_name=document.getElementById("father_name").value
+            console.log(father_name)
+            var mother_name=document.getElementById("mother_name").value
+            console.log(mother_name)
+            var grandfather=document.getElementById("grandfather").value
+            console.log(grandfather)
+            var spouse_name=document.getElementById("spouse_name").value
+            console.log(spouse_name)
+            var father_in_law=document.getElementById("father_in_law").value
+            console.log(father_in_law)
+            var mother_in_law=document.getElementById("mother-in-law").value
+            console.log(mother_in_law);
+            
+
+        })
+    </script>
+</body>
+</html>
